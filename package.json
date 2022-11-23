@@ -10,11 +10,12 @@
   "@testing-library/user-event": "^13.5.0",
   "cors": "^2.8.5",
   "emailjs-com": "^3.2.0",
+  "eslint-plugin-unicorn": "^41.0.1",
   "gh-pages": "^4.0.0",
   "jquery": "^3.6.1",
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
-  "react-router": "^6.4.2",
+  "react-router": "^6.4.3",
   "react-router-dom": "^5.3.4",
   "react-scripts": "^2.1.8",
   "web-vitals": "^2.1.4"
@@ -26,12 +27,6 @@
   "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
- },
- "eslintConfig": {
-  "extends": [
-   "react-app",
-   "react-app/jest"
-  ]
  },
  "browserslist": {
   "production": [
@@ -46,9 +41,17 @@
   ]
  },
  "devDependencies": {
+  "@types/node": "^18.11.9",
   "@types/react-router-dom": "^5.3.3",
-  "eslint-plugin-flowtype": "^8.0.3",
+  "babel-eslint": "^9.0.0",
+  "eslint": "^5.16.0",
+  "eslint-config-react-app": "^7.0.1",
+  "eslint-loader": "^4.0.2",
+  "eslint-plugin-flowtype": "^2.50.3",
   "eslint-plugin-import": "^2.26.0",
-  "eslint-plugin-react-hooks": "^5.0.0-next-fecc288b7-20221025"
+  "eslint-plugin-jsx-a11y": "^6.6.1",
+  "eslint-plugin-react": "^7.31.10",
+  "eslint-plugin-react-hooks": "^5.0.0-next-fecc288b7-20221025",
+  "tslib": "^2.4.1"
  }
 }
