@@ -1,0 +1,49 @@
+ 
+ 
+ npm run serve  <-- TO Start the backend server connection to mongo db
+ nodemon .\index.js 
+ 
+ npm run start <-- To start frontend server 
+
+ To start both server i.e. backend and frontend,  add below line to frontend package.json -> scripts 
+ -- > "both": "concurrently \"npm run start \"\"npm run serve \""  
+ then run ---> npm run both
+
+
+ Frontend Setup 
+ -------//-------
+ 
+
+ create react app :-
+ npm i create-react-app app-name
+
+ react router :- 
+ npm i react-router-dom concurrently <-- concurrently is for working with both server
+
+
+
+
+Backend initial setup 
+---------//-----------
+
+1. Download mongo db server and compass
+2. make a folder 'Backend' in main folder of site
+3. open with vs code - > terminal
+4. give the required details i.e packege name, version et.
+5. after - > npm i express
+6. then - > npm i mongoose 
+
+7. create a file index.js in backend folder 
+8. install thunderline client in vs ceode for tessting of api's
+9. comment node_module in gitignore in main site file for github commit purpose 
+10.create a file db.js to coonnect with database --> refer image in reactjs-> tutorialdoc -> connectToDatabase img 
+11. Go to index.js file and type 
+
+  const connectToMongo = require('./db');
+  connectToMongo(); 
+  
+12.then run npm i -D nodemon  -- > D means dev dependency not part of packages, if we want to not include in packages
+13.then try to run -->  nodemon .\index.js  -- > if got error run -->  npm run serve 
+14. Go to express js offical site on google and copy boiler plate
+15. try to run http url in Thunderline -- > it print hello world
+16. create modal folder for modals for schema validation for databse values --> get bolierplate from mongoosejs.com
